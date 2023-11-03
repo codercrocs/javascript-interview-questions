@@ -8459,9 +8459,9 @@ console.log(myChars[0]);
 console.log(myChars.length);
 ```
 
-- 1: [empty, 'b', 'c', 'd'], empty, 3
+- 1: [undefined, 'b', 'c', 'd'], empty, 3
 - 2: [null, 'b', 'c', 'd'], empty, 3
-- 3: [empty, 'b', 'c', 'd'], undefined, 4
+- 3: [undefined, 'b', 'c', 'd'], undefined, 4
 - 4: [null, 'b', 'c', 'd'], undefined, 4
 
 <details><summary><b>Answer</b></summary>
@@ -8501,10 +8501,10 @@ console.log(array3);
 <details><summary><b>Answer</b></summary>
 <p>
 
-##### Answer: 2
+##### Answer: 1
 
-The latest chrome versions display `sparse array`(they are filled with holes) using this empty x n notation. Whereas the older versions have undefined x n notation.
-**Note:** The latest version of FF displays `n empty slots` notation.
+The latest chrome versions display `sparse array`(they are filled with holes) using this undefined x n notation. Whereas the older versions have empty x n notation.
+
 
 </p>
 </details>
